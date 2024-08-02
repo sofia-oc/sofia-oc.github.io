@@ -1,0 +1,144 @@
+body{
+background-color: #0D0D0D;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 900;
+font-style: normal; 
+}
+
+/* Textos */
+.title{
+    font-size: x-large;
+    color: transparent;
+    background-image: linear-gradient(to left,  #dac9f2, #BCA2F2, #70648c, #ae89fd, #bdaef2);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;  
+    cursor: pointer; 
+}
+
+@keyframes color{
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+h1{
+    margin-left: 1%;
+}
+
+h2, p{
+    text-align: center;
+}
+
+p{
+    color: #BCA2F2;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1cm;
+}
+
+/* Imagenes */
+.image{
+    width: 40%;
+}
+#aboutme img{
+    width: 30%;
+    border-radius: 5%;
+    border-style:solid;
+    border-color: #ae89fd;
+}
+#social img{
+    width: 100%;
+    height: 40px;
+}
+.title img{
+    width: 50%;
+}
+#main-img img{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* links */
+a{
+    font-size: medium;
+    color: #BDAEF2;
+}
+
+/* tablas */
+table{
+    margin: auto;
+    color: #BCA2F2;
+}
+
+
+/* hr's */
+hr{
+    border-color: #70648C;
+    background-color: #70648C;
+    height: 2px;
+}
+#main-img hr{
+    width: 70%;
+}
+#aboutme hr{
+    width: 50%;
+}
+#jap hr{
+    width: 30%;
+}
+#proyects hr{
+    width: 10%;
+}
+
+/* Menu desplegable */
+
+.menu-container{
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+
+div{
+    float: right;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 5%);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-style: dashed;
+    right: 50%;
+    width: 5cm;
+}
+
+.menu a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover{
+    background-color: #70648C;
+}
+
+.menu-container:hover .menu,
+.menu-container:focus-within .menu{
+    display: block;
+}
