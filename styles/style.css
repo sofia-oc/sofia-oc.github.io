@@ -42,7 +42,7 @@ section {
     z-index: -1;
 }
 
-#aboutme div, .card {
+.about, .social, .card {
     background-color: var(--bg-cards);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
