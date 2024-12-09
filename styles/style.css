@@ -51,11 +51,15 @@ section {
 /* Iconos */
 
 .fa-solid {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .fa-brands, .fa-envelope {
     font-size: 2.5rem;
+}
+
+.fa-link, .fa-code {
+    font-size: 1rem;
 }
 
 .fa-arrow-right, .fa-arrow-left {
@@ -84,17 +88,20 @@ a {
 }
 
 /* Botones redes*/
-.social a {
+.social a, .links a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.social a:hover {
+.social a:hover, .links a:hover {
     background-color: var(--txt-1);
-    color: var(--bg);
+    color: var(--bg); 
+}
+
+.social a:hover {
     border-radius: 50px;
-    box-shadow: 4px 4px 8px #00000033
+    box-shadow: 4px 4px 8px #00000033;
 }
 
 /* Efecto tipeo */
