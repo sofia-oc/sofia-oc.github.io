@@ -8,6 +8,31 @@ body{
     margin:0;
 }
 
+/* Scrollbar personalizada */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--txt-1);
+    border-radius: 10px;
+    border: 3px solid var(--bg);
+}
+
 /* Particulas de fondo */
 #particles-js {
     position: fixed;
@@ -18,15 +43,17 @@ body{
 }
 
 #aboutme div {
-    background-color: #161515;
+    background-color: var(--bg-cards);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
 }
 
+/* Iconos */
 .fa-brands, .fa-solid {
     font-size: 2.5rem;
 }
 
+/* Textos */
 h1, h2 {
     font-weight: bold;
 }
@@ -42,12 +69,19 @@ a {
     color: var(--txt-1);
 }
 
-li {
-    list-style:none;
+/* Botones redes*/
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
+.social a:hover {
+    background-color: var(--txt-1);
+    color: var(--bg);
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px #00000033
+}
 
 /* Efecto tipeo */
 .typewrite {
@@ -56,6 +90,7 @@ li {
     white-space: nowrap; 
     margin: 0 auto; 
     letter-spacing: .15em;
+    font-style: italic;
     animation: 
       blink-caret .75s step-end infinite;
 }
@@ -64,23 +99,6 @@ li {
     from, to { border-color: transparent }
     50% { border-color: var(--txt-1);}
 }
-
-
-/* Scrollbar personalizada */
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--bg);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--txt-1);
-    border-radius: 10px;
-    border: 3px solid var(--bg);
-}
-
 
 /* Pantallas medianas y chicas */
 @media (max-width: 1023px) {
@@ -96,6 +114,7 @@ li {
 /* Variables */
 :root {
     --bg: #0D0D0D;
+    --bg-cards: #161515;
     --txt-1: #BCA2F2;
     --txt-2: #dad1ee;
 }

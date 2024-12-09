@@ -1,3 +1,4 @@
+/* Efecto de Tipeo */
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -51,7 +52,7 @@ window.onload = function() {
 };
 
 
-/* Fondo header */
+/* Fondo */
 particlesJS("particles-js", {
     particles: {
       number: { value: 160, density: { enable: true, value_area: 800 } },
@@ -107,8 +108,3 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
-  
-update = function () {
-    requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
