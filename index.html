@@ -20,14 +20,14 @@
 
     <section class="d-flex flex-wrap flex-column justify-content-center align-content-center vh-100">
         
-    <h1 class="mb-0">
-        Hi! I'm Sofia Osano
-    </h1>
-    <p>        
-        <a href="" class="typewrite" data-period="3000" data-type='[ "Web developer" ]'>
-            <span class="wrap"></span>
-        </a>
-    </p>
+        <h1 class="mb-0">
+            Hi! I'm Sofia Osano
+        </h1>
+        <p>        
+            <a href="" class="typewrite" data-period="3000" data-type='[ "Web developer" ]'>
+                <span class="wrap"></span>
+             </a>
+        </p>
 
     </section>
     <!-- en el borde tiene que haber 2 botones, uno del modo y otro del idioma-->
@@ -35,11 +35,9 @@
 
         <div class="col-11 col-md-7 col-lg-6 p-3">
             <h2 class="p-3"> About me </h2>
-            <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet sem cursus, porta augue non,
-                convallis est. Fusce sed metus sit amet libero consectetur lobortis a id nisi. Sed tincidunt accumsan magna,
-                vitae pretium neque consequat ut. Nam fermentum consectetur augue, et consequat quam maximus vel. Praesent eu
-                imperdiet erat. Vestibulum non lacinia nisl. Praesent eget maximus augue. Sed sed maximus erat. Sed at tellus
-                elit.
+            <p class="p-3 pt-0">Hi! I'm Sofia Osano, a web developer from Uruguay passionate about creating user-friendly and innovative digital solutions. I have experience with HTML, CSS, JavaScript, Python, GitHub, APIs, and responsive design.
+                I enjoy tackling challenges that help me grow, leveraging my adaptability and teamwork skills. Currently, I'm enhancing my expertise in databases and interface design to build seamless web experiences.
+                When I'm not coding, I'm listening to music, playing games, or working on creative projects.
             </p>
         </div>
 
@@ -54,11 +52,35 @@
     <section id="proyects" class="d-flex flex-wrap flex-row justify-content-evenly align-content-center align-items-center vh-100">
         
         <div class="col-12 text-center">
-            <h2> Proyects </h2>
+            <h2 class="p-3"> Proyects </h2>
         </div>
         
-        <div class="cards">
-            <p> ¡Soon! </p>
+        <div class="card col-10 col-md-5 col-lg-3">
+            <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="imgs/index-html.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="imgs/product-info-html.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="imgs/cart-html.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+                  <span aria-hidden="true"> <i class="fa-solid fa-arrow-left"></i></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+                    <span aria-hidden="true"> <i class="fa-solid fa-arrow-right"></i></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="card-body">
+                <h5 class="card-title p-2 pb-0">E-commerce</h5>
+                <p class="card-text p-2"> Designed and implemented a front-end using HTML and CSS. Integrated REST APIs for dynamic product data. </p>
+            </div>
         </div>
         
         <!-- Acá va un carrusel con imagenes del proyecto, estaria bien poner que se uso para hacer la pagina,
@@ -68,6 +90,7 @@
 </body>
 
     <script src="https://kit.fontawesome.com/17e8e678bb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="scripts/main.js"></script>
