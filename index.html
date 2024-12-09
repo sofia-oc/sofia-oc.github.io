@@ -7,109 +7,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Estilos/styles.css">
     <title> Sofia | Portafolio Web </title>
-    <link rel="icon" href="imagenes/code.png" type="image/jpeg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" href="" type="image/jpeg" />
     
 </head>
 
 <body>
 
-    <header> 
-        <h1 class="title"> Sofia Osano Corbo | 
-            <div class="menu-container">
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle">
-                    <img src="imagenes/menu 1.png">
-                </label>
-                <div class="menu">
-                    <a href="#aboutme"> Sobre mí</a>
-                    <a href="#jap">JaP</a>
-                    <a href="#proyects">Proyectos</a>
-                    <a href="#social"> Redes </a>
-                </div>
-            </div>
-        </h1>
-        <hr>
+    <div id="particles-js" class="vh-100"></div>
+
+    <header class="d-flex flex-wrap flex-column justify-content-center align-content-center vh-100">
+        
+    <h1 class="mb-0">
+        Hi! I'm Sofia Osano
+    </h1>
+    <p>        
+        <a href="" class="typewrite" data-period="3000" data-type='[ "Web developer" ]'>
+            <span class="wrap"></span>
+        </a>
+    </p>
+
     </header>
+    <!-- en el borde tiene que haber 2 botones, uno del modo y otro del idioma estaria bueno que sea soft scroll-->
+    <section id="aboutme" class="d-flex flex-wrap flex-row justify-content-evenly align-content-center align-items-left vh-100">  
 
-    <section id="main-img"> 
-        <img src="imagenes/fondito.png" oncontextmenu="return false">
-        <hr>
-    </section>
-
-    <section id="aboutme"> 
-        <br>
-        <h2 class="title"> Sobre mí </h2> 
-        <p> Soy Sofia, tengo 25 años y vivo en la ciudad de Rocha.
-            <br>
-            Estudio profesorado de matemática y desarrollo web.
-            <br>
-            Escucho música todo el tiempo, disfruto mucho de los juegos RPG y adoro a los animales.
-            <br>
-            <br>
-            No sé qué más decir sobre mí, así que les dejo unas fotos de mis perros:
-            <br>
-            Moro y Luna
-            <p> 
-                <img src="imagenes/Moro.JPG" title="Moro" oncontextmenu="return false">
-                <img src="imagenes/Luna.jpg" title="Luna" oncontextmenu="return false">
+        <div class="col-sm-12 col-md-7 col-lg-6 p-3">
+            <h2 class="p-3"> About me </h2>
+            <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet sem cursus, porta augue non,
+                convallis est. Fusce sed metus sit amet libero consectetur lobortis a id nisi. Sed tincidunt accumsan magna,
+                vitae pretium neque consequat ut. Nam fermentum consectetur augue, et consequat quam maximus vel. Praesent eu
+                imperdiet erat. Vestibulum non lacinia nisl. Praesent eget maximus augue. Sed sed maximus erat. Sed at tellus
+                elit.
             </p>
-        </p>
-        <br>
-        <hr>
+        </div>
+
+        <div class="d-flex flex-wrap flex-column col-sm-12 col-md-7 col-lg-1 p-3 justify-content-between align-content-center social">
+            <li> <a href="https://github.com/sofia-oc" target="_blank" title="GitHub"> <i class="fa-brands fa-github p-3"></i> </a> </li>
+            <li> <a href="https://www.linkedin.com/in/sofia-noc/" target="_blank" title="LinkedIn"> <i class="fa-brands fa-linkedin p-3"></i> </a> </li>
+            <li> <a href="mailto:sofia-199906@hotmail.com" target="_blank" title="mail"> <i class="fa-solid fa-envelope p-3"></i> </a> </li>
+        </div>
+
     </section>
 
-    <section id="jap"> 
-        <br>
-        <h2 class="title"> JaP </h2> 
-        <p> Actualmente estoy aprendiendo desarrollo web en el programa Jovenes a Programar de Ceibal.
-            <br>
-            Decidí inscribirme porque la propuesta me parecio muy interesante y una excelente
-            <br>
-            oportunidad para probar y aprender cosas nuevas.
-            <br>
-            <br>
-            Desde que empecé el curso, he aprendido un montón y espero seguir haciéndolo en esta segunda fase. 
-           <br> 
-           <br>
-        </p>
-        <br>
-        <p>
-            <table>
-                <tr>
-                    <th></th>
-                    <th> <img class="image" src="imagenes\code.png" > </th>
-                </tr>
-                <tr>
-                    <th> <img class="image" src="imagenes/html.png"> </th>
-                    <th> <img class="image" src="imagenes/css.png"> </th>
-                    <th> <img class="image" src="imagenes/js.png"> </th>
-                </tr>
-            </table>
-        </p>
-        <br>
-        <hr>  
-    </section>
-
-    <section id="proyects">
-        <br>
-        <h2 class="title"> Proyectos </h2> 
-        <p> ¡Proximamente! </p>
-        <br>
-        <hr>
-    </section>
-
-    <section id="social">
-        <br>
-        <h2 class="title"> Redes </h2> 
-        <table>
-            <th> <a href="https://github.com/sofia-oc" target="_blank" title="GitHub"> <img src="imagenes/github.png"> </a> </th>
-            <th> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="Instagram"> <img src="imagenes/instagram.png"> </a> </th>
-        </table>
-        <hr>
+    <section id="proyects" class="d-flex flex-wrap flex-row justify-content-evenly align-content-center align-items-center vh-100">
+        
+        <div class="col-12 text-center">
+            <h2> Proyects </h2>
+        </div>
+        
+        <div class="cards">
+            <p> ¡Soon! </p>
+        </div>
+        
+        <!-- Acá va un carrusel con imagenes del proyecto, estaria bien poner que se uso para hacer la pagina,
+          o sea, CSS, bootstrap, etc. -->
     </section>
 
 </body>
+
+    <script src="https://kit.fontawesome.com/17e8e678bb.js" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="scripts/main.js"></script>
 
 </html>

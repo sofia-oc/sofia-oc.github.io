@@ -1,0 +1,101 @@
+body{
+    background-color: var(--bg);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal; 
+    color: var(--txt-2);
+    margin:0;
+}
+
+/* Particulas de fondo */
+#particles-js {
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+    background-color: transparent;
+    z-index: -1;
+}
+
+#aboutme div {
+    background-color: #161515;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.fa-brands, .fa-solid {
+    font-size: 2.5rem;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+p{
+    color: var(--txt-2);
+    font-weight: 500;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: var(--txt-1);
+}
+
+li {
+    list-style:none;
+}
+
+
+
+
+/* Efecto tipeo */
+.typewrite {
+    overflow: hidden;
+    border-right: 0.2em solid var(--txt-1);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--txt-1);}
+}
+
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--txt-1);
+    border-radius: 10px;
+    border: 3px solid var(--bg);
+}
+
+
+/* Pantallas medianas y chicas */
+@media (max-width: 1023px) {
+    #aboutme {
+        flex-direction: column !important;
+        justify-content: space-evenly !important;
+    }
+    .social {
+        flex-direction: row !important;
+    }
+}
+
+/* Variables */
+:root {
+    --bg: #0D0D0D;
+    --txt-1: #BCA2F2;
+    --txt-2: #dad1ee;
+}
