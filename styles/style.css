@@ -132,6 +132,12 @@ a {
     }
 }
 
+@media (max-width: 576px) {
+    #aboutme, .card-text {
+        font-size: 0.9rem;
+    }
+}
+
 /* Variables */
 :root {
     --bg: #0D0D0D;
